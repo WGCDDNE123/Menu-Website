@@ -1,8 +1,8 @@
-import { buildOrderLink, formatPrice } from "./whatsApp";
+import { buildOrderLink, formatPrice } from "../whatsApp";
 
 const MenuItem = ({ title, price, img, desc, available }) => {
   // console.log(title, price);
-  const orderLink = buildOrderLink([{title, price}]);
+  const orderLink = buildOrderLink([{ title, price }]);
   return (
     <article className={`menu-item ${available ? "" : "sold-out"}`}>
       <div className="img-wrapper">

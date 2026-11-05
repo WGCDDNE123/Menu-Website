@@ -13,6 +13,9 @@ html {
 } /*16px*/
 
 :root {
+  --whatsapp-green: #075e54;
+  --whatsapp-green-hover: #0a7a6c;
+
   /* colors */
   --primary-100: #fef3c7;
   --primary-200: #fde68a;
@@ -146,7 +149,7 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  background: purple;
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -253,10 +256,11 @@ ul {
 
 .title {
   text-align: center;
+  color: #6b7280;
 }
 
 .title-underline {
-  background: var(--primary-500);
+  background: purple;
   width: 7rem;
   height: 0.25rem;
   margin: 0 auto;
@@ -286,6 +290,9 @@ ul {
 .menu-item {
   background: var(--white);
   border-radius: var(--borderRadius);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .menu-item .img {
   height: 15rem;
@@ -294,6 +301,9 @@ ul {
 }
 .item-info {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .item-info header {
   display: flex;
@@ -307,7 +317,7 @@ ul {
   font-weight: 500;
 }
 .item-price {
-  background: var(--primary-500);
+  background: purple;
   color: var(--white);
   padding: 0.25rem 0.5rem;
   letter-spacing: var(--letterSpacing);
@@ -317,6 +327,7 @@ ul {
 .item-text {
   line-height: 2;
   color: var(--grey-500);
+  margin-bottom: 1rem;
 }
 
 .section-center {
@@ -343,7 +354,7 @@ ul {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.4rem 1rem;
-  background: #128c7e;
+  background: var(--whatsapp-green);
   color: #fff;
   border: none;
   border-radius: 0.25rem;
@@ -351,6 +362,11 @@ ul {
   letter-spacing: 1px;
   cursor: pointer;
   text-decoration: none;
+  margin-top: auto;
+  align-self: flex-start;
+}
+.order-btn:hover {
+  background: var(--whatsapp-green-hover);
 }
 
 .order-btn:disabled {
@@ -388,4 +404,28 @@ ul {
   letter-spacing: 3px;
   border-top: 2px dashed rgba(255, 255, 255, 0.6);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.business-name {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  /* color: #6b7280; */
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 100;
+  padding: 0.7rem 1.1rem;
+  background: var(--whatsapp-green);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }

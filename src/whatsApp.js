@@ -17,3 +17,8 @@ export const buildOrderLink = (items) => {
   // (spaces, ₦, and line breaks all need converting)
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 };
+
+export const buildGeneralLink = () => {
+  const message = `Hello ${BUSINESS_NAME}, I have a question.`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+};
