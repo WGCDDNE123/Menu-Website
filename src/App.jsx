@@ -4,6 +4,7 @@ import menu from './data'
 import Menu from './Menu'
 import Categories from './Categories'
 
+
 // const tempCategories = menu.map((item) => item.category)
 // const tempSet = new Set(tempCategories)
 // console.log(tempSet)
