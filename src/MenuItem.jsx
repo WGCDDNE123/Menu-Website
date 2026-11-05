@@ -1,7 +1,8 @@
 import { buildOrderLink, formatPrice } from "./whatsApp";
 
 const MenuItem = ({ title, price, img, desc, available }) => {
-  const orderLink = buildOrderLink([title, price]);
+  // console.log(title, price);
+  const orderLink = buildOrderLink([{title, price}]);
   return (
     <article className="menu-item">
       <img src={img} alt={title} className="img" />
