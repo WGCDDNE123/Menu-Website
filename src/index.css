@@ -328,3 +328,22 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.order-btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  background: #128c7e;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.order-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
