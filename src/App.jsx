@@ -3,8 +3,8 @@ import Title from "./components/Title";
 import menu from "./data";
 import Menu from "./components/Menu";
 import Categories from "./components/Categories";
-import { BUSINESS_NAME } from "./config";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import BusinessName from "./components/BusinessName";
 
 // const tempCategories = menu.map((item) => item.category)
 // const tempSet = new Set(tempCategories)
@@ -30,7 +30,7 @@ const App = () => {
   return (
     <main>
       <section className="menu">
-        <h2 className="business-name">{BUSINESS_NAME}</h2>
+        <BusinessName />
         <Title text="our menu" />
         <Categories categories={categories} sortMenuItems={sortMenuItems} />
         <Menu items={menuItems} />
